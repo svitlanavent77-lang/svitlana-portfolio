@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="code-background">
+      <pre>
+const projects = document.querySelectorAll(".project-card");
+
+projects.forEach(project => {
+  project.addEventListener("click", () => {
+    project.classList.add("active");
+  });
+});
+
+function openDemo(video) {
+  const modal = document.querySelector(".video-modal");
+  modal.classList.add("open");
+}
+
+const navLinks = document.querySelectorAll(".navigation a");
+
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    console.log("section selected");
+  });
+});
+
+const skills = ["HTML", "CSS", "JavaScript", "Python", "Figma", "WordPress"];
+
+skills.forEach(skill => {
+  console.log(skill);
+});
+</pre
+      >
+    </div>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo" />
+        </div>
+
+        <nav class="navigation">
+          <a href="#about">// About me</a>
+
+          <a href="#skills">// Skills</a>
+
+          <a href="#projects">// Projects</a>
+
+          <a href="#contact">// Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="hero-section">
+        <div class="hero-card">
+          <div class="hero-left">
+            <h2 class="hello">&gt; Hello, I’m Svitlana</h2>
+
+            <img
+              class="profile-photo"
+              src="images/photo.png"
+              alt="Svitlana portrait"
+            />
+
+            <p class="location">
+              Based in Finland<br />
+              Turku University of Applied Sciences
+            </p>
+          </div>
+
+          <div class="hero-right">
+            <h1 class="hero-title">
+              Web <span class="blue-text">Developer</span> = UI Enthusiast
+              <br />
+              = Software <span class="blue-text">Engineering</span>
+            </h1>
+
+            <p class="about-text">
+              /* I am a Software Engineering and Project Management student
+              interested in web development and modern user interfaces.
+              <br /><br />
+              I enjoy building practical projects where design and programming
+              come together to create clear and functional digital products. */
+            </p>
+
+            <a href="#contact" class="cta-link">
+              I am available for new projects, let’s chat! →
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills-section">
+        <div class="skills-card">
+          <h2 class="skills-title">[Skills]</h2>
+
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-left">
+                <img src="icon/HTML5.png" alt="HTML" />
+                <span>HTML</span>
+              </div>
+
+              <p>
+                /* Building semantic and well-structured web pages using modern
+                HTML standards. I focus on clean markup and accessible layouts.
+                */
+              </p>
+            </div>
+            <div class="skill-item">
+              <div class="skill-left">
+                <img src="icon/CSS.png" alt="CSS" />
+                <span>CSS</span>
+              </div>
+
+              <p>
+                /* Creating responsive layouts and modern interfaces using CSS,
+                Flex box and Grid. I enjoy working with clean design and visual
+                details. */
+              </p>
+            </div>
+            <div class="skill-item">
+              <div class="skill-left">
+                <img src="icon/JS.png" alt="JS" />
+                <span>JavaScript</span>
+              </div>
+
+              <p>
+                /* Developing interactive web features and dynamic user
+                interfaces. I work with DOM manipulation, events and basic
+                application logic. */
+              </p>
+            </div>
+            <div class="skill-item">
+              <div class="skill-left">
+                <img src="icon/Python.png" alt="Python" />
+                <span>Python</span>
+              </div>
+
+              <p>
+                /* Building practical applications and learning object-oriented
+                programming. I have experience creating small projects and
+                logic-based programs. */
+              </p>
+            </div>
+            <div class="skill-item">
+              <div class="skill-left">
+                <img src="icon/Git.png" alt="Git" />
+                <span>Git</span>
+              </div>
+
+              <p>
+                /* Using Git for version control and collaboration. Comfortable
+                with commits, branches, merging and working with
+                GitHub/GitLab.*/
+              </p>
+            </div>
+            <div class="skill-item">
+              <div class="skill-left">
+                <img src="icon/Figma.png" alt="Figma" />
+                <span>Figma</span>
+              </div>
+
+              <p>
+                /* Designing UI layouts, wireframes and visual concepts for web
+                projects. I use Figma to plan user interfaces before
+                development. */
+              </p>
+            </div>
+            <div class="skill-item">
+              <div class="skill-left">
+                <img src="icon/VSC.png" alt="VSC" />
+                <span>VSC</span>
+              </div>
+
+              <p>
+                /* Using Visual Studio Code as my main development environment.
+                Comfortable working with extensions, debugging tools and project
+                organization.*/
+              </p>
+            </div>
+            <div class="skill-item">
+              <div class="skill-left">
+                <img src="icon/SQL.png" alt="SQL" />
+                <span>SQL</span>
+              </div>
+
+              <p>
+                /* Working with relational databases and writing SQL queries for
+                data management. Experience with SELECT, JOIN, filtering and
+                database structure. */
+              </p>
+            </div>
+            <div class="skill-item">
+              <div class="skill-left">
+                <img src="icon/Node.js.png" alt="Node.js" />
+                <span>Node.js</span>
+              </div>
+
+              <p>
+                /* Building server-side applications using Node.js and
+                JavaScript. Learning to create backend logic, handle requests
+                and work with APIs and databases. */
+              </p>
+            </div>
+            <div class="skill-item">
+              <div class="skill-left">
+                <img src="icon/WordPress.png" alt="WordPress" />
+                <span>WordPress</span>
+              </div>
+
+              <p>
+                /* Building and customizing websites with WordPress, including
+                theme setup, plugin integration, and content management.*/
+              </p>
+            </div>
+            <div class="skill-item">
+              <div class="skill-left">
+                <img src="icon/PHP.png" alt="PHP" />
+                <span>PHP</span>
+              </div>
+
+              <p>
+                /* Building backend functionality and dynamic web features using
+                PHP.Learning server-side programming and database integration.
+                */
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects-section">
+        <div id="projects" class="projects-card">
+          <h2 class="projects-title">[Projects]</h2>
+          <p class="projects-subtitle">Projects I have worked on</p>
+
+          <div class="projects-grid">
+            <article class="project-item">
+              <h3>Personal Portfolio Website</h3>
+              <p class="project-stack">HTML • CSS • JavaScript</p>
+              <div class="project-preview"></div>
+              <a href="#" class="project-link">View projects <span>→</span></a>
+            </article>
+
+            <article class="project-item">
+              <h3>ZooLand - Memory Game</h3>
+              <p class="project-stack">Python • Pygame</p>
+              <div class="project-preview"></div>
+              <a href="#" class="project-link">View projects <span>→</span></a>
+            </article>
+
+            <article class="project-item">
+              <h3>Darts Score Counter</h3>
+              <p class="project-stack">UI Design • Figma</p>
+              <div class="project-preview"></div>
+              <a href="#" class="project-link">View projects <span>→</span></a>
+            </article>
+
+            <article class="project-item">
+              <h3>Website Redesign</h3>
+              <p class="project-stack">UI Redesign • Figma</p>
+              <div class="project-preview"></div>
+              <a href="#" class="project-link">View projects <span>→</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div id="contact" class="contact-anchor"></div>
+
+        <div class="contact-card">
+          <h2 class="contact-title">[Contact me]</h2>
+
+          <p class="contact-text">
+            Interested in working together or have a project idea? Feel free to
+            contact me.
+          </p>
+
+          <a
+            class="contact-button"
+            href="mailto:svitlana.vent77@gmail.com?subject=Portfolio contact"
+          >
+            Send email →
+          </a>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-main">
+            <img src="images/logo.png" alt="Logo" class="footer-logo" />
+
+            <div class="footer-center">
+              <p class="footer-description">
+                Svitlana Vent is a Software Engineering and Project Management
+                student focused on web development and modern user interfaces.
+              </p>
+
+              <a href="mailto:svitlana.vent77@gmail.com" class="footer-email">
+                I am available for new projects, let’s chat! →
+              </a>
+            </div>
+
+            <ul class="footer-links">
+              <li>→ Web Development</li>
+              <li>→ UI / UX Design</li>
+              <li>→ WordPress Websites</li>
+              <li>→ Frontend Projects</li>
+            </ul>
+          </div>
+
+          <div class="footer-contact-row">
+            <a
+              href="mailto:svitlana.vent77@gmail.com?subject=Portfolio contact"
+              class="footer-contact-link"
+            >
+              Contact me
+            </a>
+
+            <div class="footer-socials">
+              <a href="#"><img src="icon/Linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="icon/GitHub.png" alt="GitHub" /></a>
+              <a href="#"><img src="icon/CV.png" alt="CV" /></a>
+            </div>
+          </div>
+
+          <p class="footer-copyright">
+            © 2026 Svitlana Vent. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
