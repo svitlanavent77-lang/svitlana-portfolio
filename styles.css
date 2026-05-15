@@ -677,10 +677,27 @@ footer {
 
   .menu-toggle {
     display: block;
+
+    position: relative;
+    z-index: 5000;
+
+    pointer-events: auto;
+
+    background: transparent;
+    border: 1px solid #3b9fd9;
+
+    color: white;
+    font-size: 28px;
+
+    padding: 6px 14px;
+
+    cursor: pointer;
   }
 
   .navigation {
     display: none;
+
+    pointer-events: none;
 
     position: absolute;
     top: 85px;
@@ -698,9 +715,14 @@ footer {
 
     border: 1px solid rgba(255, 255, 255, 0.2);
 
-    z-index: 1000;
+    z-index: 2500;
   }
 
+  .navigation.active {
+    display: flex !important;
+
+    pointer-events: auto;
+  }
   .navigation.active {
     display: flex;
   }
