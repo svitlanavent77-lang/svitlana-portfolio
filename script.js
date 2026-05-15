@@ -1,3 +1,4 @@
+alert("JS connected");
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".navigation");
 
