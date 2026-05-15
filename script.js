@@ -1,11 +1,8 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const navigation = document.querySelector(".navigation");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navigation = document.querySelector(".navigation");
 
-console.log("Button:", menuToggle);
-console.log("Navigation:", navigation);
-
-menuToggle.addEventListener("click", function () {
-  alert("Button clicked");
-
-  navigation.classList.toggle("active");
+  menuToggle.addEventListener("click", function () {
+    navigation.classList.toggle("active");
+  });
 });
